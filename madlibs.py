@@ -45,8 +45,12 @@ def greet_person():
 @app.route('/game')
 def show_madlib_form():
     """Ask user to play a game using HTML radio buttons."""
+    response = request.args.get("play_game")
 
-    return render_template("game.html")
+    if response == "yes":
+        return render_template("game.html")
+    else:
+        return render_template("goodbye.html")
 
 
 if __name__ == '__main__':
