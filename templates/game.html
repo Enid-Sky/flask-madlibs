@@ -1,18 +1,49 @@
 <!doctype html>
-            <html>
-            <head>
-            <title>A Compliment</title>
-            </head>
-            <body>
-            <form action="/madlib">
-                <div>
-                <p>Would you like to play a game?</p>
-                <input type="radio" name="play_game" value="yes">
-                <label>yes</label>
+<html>
+<head>
+<title>Madlib Game</title>
+</head>
+<body>
 
-                <input type="radio" name="play_game" value = "no">
-                <label>no</label>
-                </div>
-            </form>
-            </body>
-           </html> """
+    <h1>Welcome to Madlibs!!</h1>
+
+<form action="/madlibs">
+
+
+ What is your name? <input type="text" name="person">
+ <input type="submit">
+
+    <p>Let the games begin.. </p>
+
+    <p> </p>
+
+
+    <div>
+    <label for = "person_input">Person:</label>
+    <input id = "person_input" type = "text">
+    </div>
+
+    <p> </p>
+
+
+    <label>Choose a color: </label>
+    <select name="color">
+        <option value="Blue">Blue</option>
+        <option value="Pink">Pink</option>
+        <option value="Yellow">Yellow</option>
+    </select>
+
+
+
+    <div>
+        <label for="noun_input">A Noun:</label>
+        <input id="noun_input" type="text">
+    </div>
+
+    <div>
+    <p>Enter 5 adjectives: </p>
+    <textarea name = "adjectives" rows = "10" cols = "30"></textarea>
+    </div>
+
+<input type="submit">
+</form>

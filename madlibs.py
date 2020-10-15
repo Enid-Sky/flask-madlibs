@@ -53,6 +53,15 @@ def show_madlib_form():
         return render_template("goodbye.html")
 
 
+@app.route('/madlib')
+def show_madlib():
+    """Taking user input and creating madlibs"""
+    # person = request.args.get("person")
+    # colors = request.args.get("colors")
+
+    return render_template("madlib.html")
+
+
 if __name__ == '__main__':
     # Setting debug=True gives us error messages in the browser and also
     # "reloads" our web app if we change the code.
